@@ -14,7 +14,7 @@ export async function onRequestPost(context) {
     // 🔴 关键修改 1：在这里修改模型名称
     // 注意：请确认 "gemini-3-flash-preview" 是准确的模型名。
     // 如果是笔误，常用的最新版可能是 "gemini-1.5-flash" 或 "gemini-2.0-flash-exp"
-    const MODEL_NAME = "gemini-3-flash-preview"; 
+    const MODEL_NAME = "gemini-3.1-pro-preview"; 
 
     const googleResponse = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/${MODEL_NAME}:generateContent?key=${API_KEY}`,
