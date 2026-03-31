@@ -16,9 +16,9 @@ export async function onRequestPost(context) {
   // ========== 新增：核心防盗刷白名单 ==========
   const origin = request.headers.get('Origin');
   const allowedOrigins = [
-    'https://calc.juyou-tool.site/',
-    'https://compass.juyou-tool.site/',
-    'https://ielts.juyou-tool.site/',
+    'https://calc.juyou-tool.site',
+    'https://compass.juyou-tool.site',
+    'https://ielts.juyou-tool.site',
     'https://juyou-tool.site',
     'http://localhost:8788',
     'http://localhost:3000'
