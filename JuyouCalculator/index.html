@@ -100,22 +100,26 @@
 
         const getRemainingUses = () => {
 
-			return 999;
 			/*
+			return 999;
+			*/
+			
 			const today = new Date().toISOString().split('T')[0];
             const key = `juyou_usage_${today}`;
             const used = parseInt(localStorage.getItem(key) || '0');
-            return Math.max(0, DAILY_LIMIT - used);*/
+            return Math.max(0, DAILY_LIMIT - used);
         };
 
         const incrementUsage = () => {
 
-			return;
 			/*
+			return 999;
+			*/
+			
             const today = new Date().toISOString().split('T')[0];
             const key = `juyou_usage_${today}`;
             const used = parseInt(localStorage.getItem(key) || '0');
-            localStorage.setItem(key, used + 1);*/
+            localStorage.setItem(key, used + 1);
         };
 
         // === 2. 数据配置 ===
