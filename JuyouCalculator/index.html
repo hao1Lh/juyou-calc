@@ -99,21 +99,19 @@
         const DAILY_LIMIT = 3;
 
         const getRemainingUses = () => {
-            return 9999;
-			/*
+            
 			const today = new Date().toISOString().split('T')[0];
             const key = `juyou_usage_${today}`;
             const used = parseInt(localStorage.getItem(key) || '0');
-            return Math.max(0, DAILY_LIMIT - used);*/
+            return Math.max(0, DAILY_LIMIT - used);
         };
 
         const incrementUsage = () => {
-			return
-			/*
+			
             const today = new Date().toISOString().split('T')[0];
             const key = `juyou_usage_${today}`;
             const used = parseInt(localStorage.getItem(key) || '0');
-            localStorage.setItem(key, used + 1);*/
+            localStorage.setItem(key, used + 1);
         };
 
         // === 2. 数据配置 ===
